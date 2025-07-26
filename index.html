@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemScore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header Banner -->
+  <div class="header-banner">
+    <div class="nav-logo">
+        <a href="https://memscore.duckdns.org/"><img src="logo.jpg" alt="MemScore" style="max-width:80px;height:80px;"></a>
+        <span class="logo-text">MemScore</span>
+      </div>
+  
+  <!-- Hamburger for mobile -->
+  <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-controls="nav-menu" aria-expanded="false">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="center-home">
+  <nav class="navbar" id="nav-menu">
+    <ul class="nav-links">
+        <li><a href="https://memscore.duckdns.org/"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="https://memscore.duckdns.org/upload"><i class="fas fa-upload"></i>Upload Image (Demo)</a></li>
+        <li><a href="https://memscore.duckdns.org/model"><i class="fas fa-database"></i>Model Details & Download</a></li>
+        <li><a href="https://memscore.duckdns.org/performance"><i class="fas fa-chart-line"></i>Performance</a></li>
+        <li><a href="https://memscore.duckdns.org/contact"><i class="fas fa-phone"></i>Contact Us</a></li>
+    </ul>
+  </nav>
+  </div>
+</div>
+
+  <!-- Home Page Content -->
+  <div class="center-home">
+    <p>
+    
+      <a href="https://memscore.duckdns.org/"><button type="submit" class="styled-button">Upload Image</button></a>
+    
+    </p>
+    <h1>Welcome to MemScore: A Memorability Prediction System 📸</h1>
+
+    <div class="center-paragraph">
+      <p>
+        In today’s digital-first world, where visual content dominates social media, education, advertising, and user experience design, the ability to predict and optimize image memorability is more critical than ever. <strong>MemScore</strong> is your intelligent assistant for analyzing which visuals are most likely to leave a lasting impression.
+      </p>
+    </div>
+
+    <div class="center-paragraph">
+      <h3>🔍 Why Memorability Matters</h3>
+      <p>
+        Research shows that some images are inherently more memorable than others due to factors like structure, color, subject composition, and semantics. Memorability is not just subjective—it's measurable and predictable. In the landmark study by <a href="https://www.researchgate.net/publication/300410272_Understanding_and_Predicting_Image_Memorability_at_a_Large_Scale"><strong><em>Khosla et al. (ICCV 2015)</em></strong></a>, a deep learning model named <strong>MemNet</strong> was trained on <a href="http://memorability.csail.mit.edu/index.html"><strong>LaMem</strong></a>, a dataset of over 60,000 annotated images, and achieved near-human accuracy in predicting which images people remember.
+      </p>
+      <p>
+        Building on this, the <a href="https://www.researchgate.net/publication/336650157_MemCat_A_new_category-based_image_set_to_study_image_memorability"><strong>MemCat dataset</strong></a> introduced by <strong><em>Goetschalckx & Wagemans (2019)</em></strong> categorized images into meaningful types—such as animals, landscapes, and vehicles—and confirmed the consistency of memorability across diverse groups of viewers.
+      </p>
+      <p>
+        Further extending these findings, the <a href="https://www.researchgate.net/publication/376709830_Memoir_study_Investigating_image_memorability_across_developmental_stages"><strong><em>Memoir Study (Almog et al., 2023)</em></strong></a> demonstrated that memorability remains consistent across developmental stages, including between adolescents and adults. This confirms that memorability is an intrinsic property of images—not just a product of individual experiences.
+      </p>
+    </div>
+
+    <div class="center-paragraph">
+      <h3>What is MemScore?</h3>
+      <p><strong>MemScore</strong> applies this cutting-edge research using a powerful deep learning model trained on real human memory data. Simply upload an image, and our system—powered by convolutional neural networks (CNNs)—analyzes its visual features and instantly predicts a memorability score.</p>
+      <p>This isn’t just a number—it's a strategic tool to help you:</p>
+      <ul>
+        <li>📈 Enhance marketing visuals that drive recall and conversions</li>
+        <li>🧑‍🏫 Improve educational materials for better retention</li>
+        <li>🎨 Design memorable art, branding, and content</li>
+        <li>🧪 Explore research on visual cognition and memory</li>
+      </ul>
+      <p>
+        Whether you're a content creator, UX designer, educator, or researcher, <strong>MemScore</strong> empowers you to make visuals that don’t just get seen—they get remembered.
+      </p>
+    </div>
+    
+  </div>
+
+  <!-- Footer -->
+  <div class="center-home"> <br> </div>
+  
+  <div class="footer">
+    <hr>
+    | Developed by Students, ECED | Thapar Institute of Engineering and Technology |
+  </div>
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+  hamburger.setAttribute('aria-expanded', navMenu.classList.contains('show'));
+});
+</script>
+</body>
+</html>
